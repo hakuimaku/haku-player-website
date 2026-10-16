@@ -1,0 +1,33 @@
+/* Hiệu ứng đường quét ngang rất nhẹ mô phỏng màn hình CRT cũ */
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.025),
+        rgba(0, 0, 0, 0.025) 1px,
+        transparent 1px,
+        transparent 3px
+    );
+    z-index: 9999;
+}
+
+/* Lớp hạt nhiễu mờ phủ lên giao diện */
+.noise-layer {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image: url("../assets/textures/noise.png");
+    opacity: 0.025;
+    z-index: 9998;
+}
+
+/* Giảm nhẹ độ bão hòa màu của ảnh bìa để tạo cảm giác hoài niệm */
+.album-cover {
+    filter: saturate(0.75) contrast(0.95) brightness(0.95);
+    image-rendering: auto;
+    transition: opacity 150ms linear;
+}
+
