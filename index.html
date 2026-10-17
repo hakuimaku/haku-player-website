@@ -55,14 +55,23 @@
                     <li class="menu-item">
                         <a href="albums.html" class="menu-link">ALBUMS</a>
                         <ul class="submenu list-unstyled">
-                            <li class="submenu-item"><a href="albums.html">Tất cả Album</a></li>
+                            <li class="submenu-item"><a href="albums.html">Tất cả 08 Album</a></li>
                             <li class="submenu-item has-children">
-                                <span>Theo chủ đề &raquo;</span>
+                                <span>Đĩa CD 01 – 04 &raquo;</span>
                                 <ul class="submenu submenu-level2 list-unstyled">
                                     <li class="submenu-item"><a href="albums.html#album-memories">Memories That Never Happened</a></li>
                                     <li class="submenu-item"><a href="albums.html#album-midnight">After Midnight</a></li>
                                     <li class="submenu-item"><a href="albums.html#album-poolside">Poolside Static</a></li>
                                     <li class="submenu-item"><a href="albums.html#album-mall">Sunday Closing Time</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu-item has-children">
+                                <span>Đĩa CD 05 – 08 &raquo;</span>
+                                <ul class="submenu submenu-level2 list-unstyled">
+                                    <li class="submenu-item"><a href="albums.html#album-office">Cubicle 1998</a></li>
+                                    <li class="submenu-item"><a href="albums.html#album-parking">Wet Asphalt &amp; Streetlights</a></li>
+                                    <li class="submenu-item"><a href="albums.html#album-waiting">Lobby Television</a></li>
+                                    <li class="submenu-item"><a href="albums.html#album-stairwell">Exit Level B2</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -71,14 +80,23 @@
                     <li class="menu-item">
                         <a href="gallery.html" class="menu-link">LIMINAL GALLERY</a>
                         <ul class="submenu list-unstyled">
-                            <li class="submenu-item"><a href="gallery.html">Bộ sưu tập ảnh 2001</a></li>
+                            <li class="submenu-item"><a href="gallery.html">Bộ sưu tập 08 ảnh 2001</a></li>
                             <li class="submenu-item has-children">
-                                <span>Địa điểm chụp &raquo;</span>
+                                <span>Đĩa mềm A (01 – 04) &raquo;</span>
                                 <ul class="submenu submenu-level2 list-unstyled">
-                                    <li class="submenu-item"><a href="gallery.html#photo-hallway">Empty Hallway</a></li>
-                                    <li class="submenu-item"><a href="gallery.html#photo-station">Midnight Station</a></li>
-                                    <li class="submenu-item"><a href="gallery.html#photo-pool">Indoor Pool</a></li>
-                                    <li class="submenu-item"><a href="gallery.html#photo-mall">Closed Mall</a></li>
+                                    <li class="submenu-item"><a href="gallery.html#photo-hallway">01. Empty Hallway</a></li>
+                                    <li class="submenu-item"><a href="gallery.html#photo-station">02. Midnight Station</a></li>
+                                    <li class="submenu-item"><a href="gallery.html#photo-pool">03. Indoor Pool</a></li>
+                                    <li class="submenu-item"><a href="gallery.html#photo-mall">04. Closed Mall</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu-item has-children">
+                                <span>Đĩa mềm B (05 – 08) &raquo;</span>
+                                <ul class="submenu submenu-level2 list-unstyled">
+                                    <li class="submenu-item"><a href="gallery.html#photo-office">05. Fluorescent Office</a></li>
+                                    <li class="submenu-item"><a href="gallery.html#photo-parking">06. Rainy Parking Lot</a></li>
+                                    <li class="submenu-item"><a href="gallery.html#photo-waiting">07. Empty Waiting Room</a></li>
+                                    <li class="submenu-item"><a href="gallery.html#photo-stairwell">08. Quiet Stairwell</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -113,19 +131,21 @@
                     <div class="sidebar-section mb-4">
                         <div class="sidebar-heading">LIBRARY</div>
                         <ul class="list-unstyled mb-0">
-                            <li class="sidebar-item">All Music (07)</li>
-                            <li class="sidebar-item">Recently Played</li>
-                            <li class="sidebar-item">Favorites</li>
+                            <li class="sidebar-item filter-album active" data-album="ALL">All Music (40)</li>
                         </ul>
                     </div>
 
                     <div class="sidebar-section">
-                        <div class="sidebar-heading">MEMORIES</div>
+                        <div class="sidebar-heading">ALBUM PLAYLISTS (08)</div>
                         <ul class="list-unstyled mb-0">
-                            <li class="sidebar-item">Summer 2007</li>
-                            <li class="sidebar-item">Empty Mall</li>
-                            <li class="sidebar-item">Night Drive</li>
-                            <li class="sidebar-item">Rainy Afternoon</li>
+                            <li class="sidebar-item filter-album" data-album="Memories That Never Happened">01. Memories (05)</li>
+                            <li class="sidebar-item filter-album" data-album="After Midnight">02. After Midnight (05)</li>
+                            <li class="sidebar-item filter-album" data-album="Poolside Static">03. Poolside Static (05)</li>
+                            <li class="sidebar-item filter-album" data-album="Sunday Closing Time">04. Sunday Closing (05)</li>
+                            <li class="sidebar-item filter-album" data-album="Cubicle 1998">05. Cubicle 1998 (05)</li>
+                            <li class="sidebar-item filter-album" data-album="Wet Asphalt & Streetlights">06. Wet Asphalt (05)</li>
+                            <li class="sidebar-item filter-album" data-album="Lobby Television">07. Lobby TV (05)</li>
+                            <li class="sidebar-item filter-album" data-album="Exit Level B2">08. Exit Level B2 (05)</li>
                         </ul>
                     </div>
                 </aside>
@@ -152,7 +172,7 @@
 
                                     <div class="track-info flex-grow-1 w-100">
                                         <h1 id="song-title" class="song-title mb-1">Empty Hallway</h1>
-                                        <p id="song-artist" class="song-artist mb-3">Unknown Artist</p>
+                                        <p id="song-artist" class="song-artist mb-3">Quiet Corridor</p>
 
                                         <div class="meta-block mb-3">
                                             <div class="meta-label">ALBUM</div>
@@ -162,7 +182,7 @@
                                         <div class="row g-3 mb-3">
                                             <div class="col-6">
                                                 <div class="meta-label">TRACK</div>
-                                                <div id="track-number" class="meta-mono">01 / 07</div>
+                                                <div id="track-number" class="meta-mono">01 / 40</div>
                                             </div>
                                             <div class="col-6">
                                                 <div class="meta-label">TIME</div>
@@ -196,9 +216,12 @@
                         </div>
                     </section>
 
-                    <!-- Khu vực bảng danh sách bài hát -->
+                    <!-- Khu vực bảng danh sách bài hát (hiển thị theo từng Album hoặc toàn bộ 40 bài) -->
                     <section class="playlist retro-panel p-3">
-                        <div class="panel-header mb-2">PLAYLIST — 07 TRACKS LOADED</div>
+                        <div class="panel-header d-flex flex-wrap justify-content-between align-items-center gap-2 mb-2">
+                            <span id="playlist-title">PLAYLIST — ALL MUSIC (40 TRACKS)</span>
+                            <button type="button" id="show-all-btn" class="retro-button py-1 px-2">HIỆN TẤT CẢ 40 BÀI</button>
+                        </div>
                         <div class="table-responsive playlist-scroll retro-inset">
                             <table class="table table-borderless mb-0 playlist-table">
                                 <thead>
@@ -206,6 +229,7 @@
                                         <th scope="col" class="col-num">#</th>
                                         <th scope="col">TITLE</th>
                                         <th scope="col" class="col-artist">ARTIST</th>
+                                        <th scope="col" class="d-none d-sm-table-cell">ALBUM</th>
                                         <th scope="col" class="text-end col-time">TIME</th>
                                     </tr>
                                 </thead>
@@ -219,8 +243,8 @@
                 </div>
             </main>
 
-            <!-- Thanh điều khiển phát nhạc ở dưới cùng -->
-            <footer class="player-controls d-flex flex-wrap align-items-center justify-content-between gap-3 p-3">
+            <!-- Thanh điều khiển phát nhạc ở dưới cùng cửa sổ -->
+            <div class="player-controls d-flex flex-wrap align-items-center justify-content-between gap-3 p-3">
                 <!-- Các nút chuyển bài và phát/tạm dừng -->
                 <div class="transport-controls d-flex align-items-center gap-2">
                     <button type="button" id="prev-btn" class="retro-button control-btn" aria-label="Bài trước">|&lt;&lt;</button>
@@ -257,9 +281,48 @@
                         aria-label="Âm lượng"
                     >
                 </div>
-            </footer>
+            </div>
 
         </div>
+
+        <!-- Chân trang hiển thị thông tin chi tiết ở dưới cùng trang web -->
+        <footer class="site-footer retro-panel mt-3 p-3">
+            <div class="row g-4">
+                <div class="col-12 col-md-5">
+                    <div class="footer-heading">HAKU PLAYER 2001 — AUDIO ARCHIVE</div>
+                    <p class="mb-2">
+                        Trình phát nhạc trực tuyến lấy cảm hứng từ phần mềm máy tính giai đoạn 1998 – 2008,
+                        lưu trữ các bản nhạc ambient và hình ảnh không gian hoài niệm (Liminal Space).
+                    </p>
+                    <div class="meta-mono">AUDIO: 128 KBPS MP3 / 44.1 KHZ STEREO</div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="footer-heading">DANH MỤC TRANG WEB</div>
+                    <ul class="list-unstyled footer-links mb-0">
+                        <li><a href="index.html">&raquo; Trang chủ (Music Player)</a></li>
+                        <li><a href="albums.html">&raquo; Bộ sưu tập CD-ROM Albums</a></li>
+                        <li><a href="gallery.html">&raquo; Thư viện ảnh Liminal</a></li>
+                        <li><a href="about.html">&raquo; Giới thiệu &amp; Gửi yêu cầu</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-4">
+                    <div class="footer-heading">THÔNG TIN ĐỒ ÁN &amp; LIÊN HỆ</div>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-1"><strong>Học phần:</strong> Thiết kế Web</li>
+                        <li class="mb-1"><strong>Công nghệ:</strong> HTML5, CSS3, Bootstrap 5, JS</li>
+                        <li class="mb-1"><strong>Email:</strong> archive@hakuplayer2001.local</li>
+                        <li><strong>Phiên bản:</strong> Build 2001.10 (Desktop Edition)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-2">
+                <span>&copy; 2001 - 2026 HAKU PLAYER PROJECT. ALL RIGHTS RESERVED.</span>
+                <span>BEST VIEWED AT 1400x900 RESOLUTION — CRT DISPLAY MODE</span>
+            </div>
+        </footer>
     </div>
 
     <!-- Phần tử audio HTML5 dùng để phát nhạc -->
