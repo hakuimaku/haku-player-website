@@ -28,6 +28,49 @@
     --space-xl: 32px;
 }
 
+/* Tông màu Vàng Hổ Phách / Nâu CD-ROM dành riêng cho trang Albums */
+body.page-albums {
+    --bg: #dfd3be;
+    --surface: #d1c2a8;
+    --surface-dark: #b8a688;
+    --text: #2c2218;
+    --muted: #695642;
+    --green: #8c5832;
+    --blue: #7a4b2a;
+    --cream: #efe5d4;
+    --border-light: #f5ede0;
+    --border-dark: #7d6b52;
+}
+
+/* Tông màu Xanh Đêm Phòng Tối (Darkroom) dành riêng cho trang Gallery */
+body.page-gallery {
+    --bg: #1e282d;
+    --surface: #2b3840;
+    --surface-dark: #202b31;
+    --text: #e3ece8;
+    --muted: #9cb0b8;
+    --green: #4d928f;
+    --blue: #366f78;
+    --cream: #182126;
+    --border-light: #475b66;
+    --border-dark: #12191d;
+}
+
+/* Tông màu Tím Xám Control Panel dành riêng cho trang Giới thiệu & Liên hệ */
+body.page-about {
+    --bg: #cfcdd9;
+    --surface: #bfbccd;
+    --surface-dark: #a4a0b5;
+    --text: #23202e;
+    --muted: #5a556b;
+    --green: #5d517d;
+    --blue: #4c4269;
+    --cream: #e4e1ed;
+    --border-light: #efedf5;
+    --border-dark: #6c677d;
+}
+
+
 /* Thiết lập nền và phông chữ mặc định cho toàn trang */
 body {
     background-color: var(--bg);
@@ -488,6 +531,26 @@ body {
 }
 
 /* Định dạng cho các trang phụ: Albums, Thư viện ảnh, Giới thiệu & Liên hệ */
+.page-banner {
+    background-color: var(--cream);
+    border-top: 2px solid var(--border-dark);
+    border-left: 2px solid var(--border-dark);
+    border-right: 2px solid var(--border-light);
+    border-bottom: 2px solid var(--border-light);
+    padding: 16px 20px;
+}
+
+.banner-badge {
+    display: inline-block;
+    font-family: "Courier New", monospace;
+    font-size: var(--font-xs);
+    font-weight: bold;
+    background-color: var(--blue);
+    color: #ffffff;
+    padding: 3px 10px;
+    margin-bottom: 6px;
+}
+
 .album-card-img {
     width: 100%;
     aspect-ratio: 1;
@@ -495,11 +558,37 @@ body {
     filter: saturate(0.75) contrast(0.95) brightness(0.95);
 }
 
+/* Giao diện khung ngắm máy ảnh lớn cho trang Gallery */
+.featured-photo-img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    filter: saturate(0.8) contrast(0.95);
+}
+
 .gallery-img {
     width: 100%;
-    height: 260px;
+    height: 200px;
     object-fit: cover;
     filter: saturate(0.75) contrast(0.95) brightness(0.95);
+}
+
+.gallery-card {
+    cursor: pointer;
+    transition: background-color 120ms linear;
+}
+
+.gallery-card:hover {
+    background-color: var(--surface-dark);
+}
+
+.camera-hud {
+    font-family: "Courier New", monospace;
+    font-size: var(--font-sm);
+    color: #7ce38b;
+    background-color: #12191d;
+    padding: 8px 14px;
+    border: 1px solid var(--border-light);
 }
 
 .retro-input {
@@ -517,7 +606,7 @@ body {
 }
 
 .retro-input:focus {
-    background-color: #f3eedc;
+    filter: brightness(1.05);
 }
 
 .status-bar {
@@ -527,3 +616,50 @@ body {
     font-size: var(--font-xs);
     color: var(--muted);
 }
+
+/* Khu vực chân trang (Footer) hiển thị thông tin chi tiết ở dưới cùng trang web */
+.site-footer {
+    background-color: var(--surface);
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2);
+    font-size: var(--font-sm);
+}
+
+.footer-heading {
+    font-size: var(--font-sm);
+    font-weight: bold;
+    color: var(--text);
+    border-bottom: 2px solid var(--border-dark);
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.footer-links li {
+    margin-bottom: 6px;
+}
+
+.footer-links a {
+    color: var(--text);
+    text-decoration: none;
+    transition: background-color 120ms linear;
+    padding: 2px 4px;
+}
+
+.footer-links a:hover {
+    background-color: var(--blue);
+    color: #ffffff;
+}
+
+.footer-bottom {
+    border-top: 2px solid var(--border-dark);
+    padding-top: 10px;
+    margin-top: 12px;
+    font-family: "Courier New", monospace;
+    font-size: var(--font-xs);
+    color: var(--muted);
+}
+
+
