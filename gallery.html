@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haku Player 2001 - Thư Viện Ảnh Liminal</title>
+    <title>Haku Player 2001 - Thư Viện 08 Ảnh Liminal</title>
     <!-- Thư viện Bootstrap 5 hỗ trợ chia bố cục và responsive -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Các file CSS giao diện retro và hiệu ứng màn hình cũ -->
@@ -11,16 +11,16 @@
     <link rel="stylesheet" href="css/crt.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body>
+<body class="page-gallery">
     <!-- Lớp phủ hạt nhiễu nhẹ tạo cảm giác màn hình analog -->
     <div class="noise-layer"></div>
 
     <div class="main-container py-3 py-md-4 px-2 px-md-3">
         <div class="app-window retro-panel">
 
-            <!-- Thanh tiêu đề cửa sổ -->
+            <!-- Thanh tiêu đề cửa sổ tông Xanh Đêm Phòng Tối riêng của trang Gallery -->
             <header class="titlebar d-flex justify-content-between align-items-center">
-                <span class="titlebar-title">HAKU PLAYER 2001 — LIMINAL VISUAL ARCHIVE</span>
+                <span class="titlebar-title">MAVICA DARKROOM VIEWER — 08 LIMINAL PHOTO ARCHIVE</span>
                 <div class="titlebar-controls d-flex gap-1">
                     <button type="button" class="retro-button titlebar-btn" aria-label="Thu nhỏ">_</button>
                     <button type="button" class="retro-button titlebar-btn" aria-label="Phóng to">&#9633;</button>
@@ -49,14 +49,23 @@
                     <li class="menu-item">
                         <a href="albums.html" class="menu-link">ALBUMS</a>
                         <ul class="submenu list-unstyled">
-                            <li class="submenu-item"><a href="albums.html">Tất cả Album</a></li>
+                            <li class="submenu-item"><a href="albums.html">Tất cả 08 Album</a></li>
                             <li class="submenu-item has-children">
-                                <span>Theo chủ đề &raquo;</span>
+                                <span>Đĩa CD 01 – 04 &raquo;</span>
                                 <ul class="submenu submenu-level2 list-unstyled">
                                     <li class="submenu-item"><a href="albums.html#album-memories">Memories That Never Happened</a></li>
                                     <li class="submenu-item"><a href="albums.html#album-midnight">After Midnight</a></li>
                                     <li class="submenu-item"><a href="albums.html#album-poolside">Poolside Static</a></li>
                                     <li class="submenu-item"><a href="albums.html#album-mall">Sunday Closing Time</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu-item has-children">
+                                <span>Đĩa CD 05 – 08 &raquo;</span>
+                                <ul class="submenu submenu-level2 list-unstyled">
+                                    <li class="submenu-item"><a href="albums.html#album-office">Cubicle 1998</a></li>
+                                    <li class="submenu-item"><a href="albums.html#album-parking">Wet Asphalt &amp; Streetlights</a></li>
+                                    <li class="submenu-item"><a href="albums.html#album-waiting">Lobby Television</a></li>
+                                    <li class="submenu-item"><a href="albums.html#album-stairwell">Exit Level B2</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -65,14 +74,23 @@
                     <li class="menu-item">
                         <a href="gallery.html" class="menu-link active-page">LIMINAL GALLERY</a>
                         <ul class="submenu list-unstyled">
-                            <li class="submenu-item"><a href="gallery.html">Bộ sưu tập ảnh 2001</a></li>
+                            <li class="submenu-item"><a href="gallery.html">Bộ sưu tập 08 ảnh 2001</a></li>
                             <li class="submenu-item has-children">
-                                <span>Địa điểm chụp &raquo;</span>
+                                <span>Đĩa mềm A (01 – 04) &raquo;</span>
                                 <ul class="submenu submenu-level2 list-unstyled">
-                                    <li class="submenu-item"><a href="#photo-hallway">Empty Hallway</a></li>
-                                    <li class="submenu-item"><a href="#photo-station">Midnight Station</a></li>
-                                    <li class="submenu-item"><a href="#photo-pool">Indoor Pool</a></li>
-                                    <li class="submenu-item"><a href="#photo-mall">Closed Mall</a></li>
+                                    <li class="submenu-item"><a href="#photo-hallway">01. Empty Hallway</a></li>
+                                    <li class="submenu-item"><a href="#photo-station">02. Midnight Station</a></li>
+                                    <li class="submenu-item"><a href="#photo-pool">03. Indoor Pool</a></li>
+                                    <li class="submenu-item"><a href="#photo-mall">04. Closed Mall</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu-item has-children">
+                                <span>Đĩa mềm B (05 – 08) &raquo;</span>
+                                <ul class="submenu submenu-level2 list-unstyled">
+                                    <li class="submenu-item"><a href="#photo-office">05. Fluorescent Office</a></li>
+                                    <li class="submenu-item"><a href="#photo-parking">06. Rainy Parking Lot</a></li>
+                                    <li class="submenu-item"><a href="#photo-waiting">07. Empty Waiting Room</a></li>
+                                    <li class="submenu-item"><a href="#photo-stairwell">08. Quiet Stairwell</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -88,108 +106,284 @@
                 </ul>
             </nav>
 
-            <!-- Bố cục chính -->
-            <main class="main-layout row g-0">
-                <!-- Khu vực danh mục bên trái -->
-                <aside class="sidebar col-md-3 col-lg-2 d-none d-md-block p-3">
-                    <div class="sidebar-section mb-4">
-                        <div class="sidebar-heading">NAVIGATION</div>
-                        <ul class="list-unstyled mb-0">
-                            <li class="sidebar-item"><a href="index.html">Music Player</a></li>
-                            <li class="sidebar-item"><a href="albums.html">Album Archive</a></li>
-                            <li class="sidebar-item active"><a href="gallery.html">Liminal Photos</a></li>
-                            <li class="sidebar-item"><a href="about.html">System &amp; Contact</a></li>
-                        </ul>
-                    </div>
+            <!-- Bố cục Phòng tối xem ảnh (Darkroom Viewer) -->
+            <main class="main-layout p-3">
 
-                    <div class="sidebar-section">
-                        <div class="sidebar-heading">CAMERA ROLL</div>
-                        <ul class="list-unstyled mb-0">
-                            <li class="sidebar-item">FD_DISK_01.JPG</li>
-                            <li class="sidebar-item">FD_DISK_02.JPG</li>
-                            <li class="sidebar-item">FD_DISK_03.JPG</li>
-                            <li class="sidebar-item">FD_DISK_04.JPG</li>
-                        </ul>
-                    </div>
-                </aside>
-
-                <!-- Khu vực trưng bày ảnh không gian Liminal -->
-                <div class="content-panel col-12 col-md-9 col-lg-10 p-3">
-                    <section class="retro-panel p-3">
-                        <div class="panel-header d-flex justify-content-between align-items-center mb-3">
-                            <span>FLOPPY DISK PHOTO VIEWER — MAVICA FD-95</span>
-                            <span class="status-text">640x480 JPEG</span>
-                        </div>
-
-                        <div class="row g-4">
-                            <!-- Ảnh 1 -->
-                            <div class="col-12 col-md-6" id="photo-hallway">
-                                <div class="retro-panel p-3 h-100">
-                                    <img src="assets/covers/hallway.jpg" alt="Hành lang vắng" class="gallery-img retro-inset mb-3">
-                                    <div class="d-flex justify-content-between align-items-center mb-1">
-                                        <h2 class="song-title fs-5 mb-0">01. Empty Corridor</h2>
-                                        <span class="meta-tag">2001.10.14 18:42</span>
-                                    </div>
-                                    <p class="mb-0 text-muted">
-                                        Hành lang tầng 3 sau giờ tan học, ánh đèn huỳnh quang phản chiếu trên sàn gạch cũ.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Ảnh 2 -->
-                            <div class="col-12 col-md-6" id="photo-station">
-                                <div class="retro-panel p-3 h-100">
-                                    <img src="assets/covers/station.jpg" alt="Sân ga lúc nửa đêm" class="gallery-img retro-inset mb-3">
-                                    <div class="d-flex justify-content-between align-items-center mb-1">
-                                        <h2 class="song-title fs-5 mb-0">02. Platform 4 After Midnight</h2>
-                                        <span class="meta-tag">2003.02.09 00:15</span>
-                                    </div>
-                                    <p class="mb-0 text-muted">
-                                        Chuyến tàu cuối cùng rời bến lúc nửa đêm, chỉ còn tiếng loa thông báo vọng lại.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Ảnh 3 -->
-                            <div class="col-12 col-md-6" id="photo-pool">
-                                <div class="retro-panel p-3 h-100">
-                                    <img src="assets/covers/pool.jpg" alt="Hồ bơi trong nhà" class="gallery-img retro-inset mb-3">
-                                    <div class="d-flex justify-content-between align-items-center mb-1">
-                                        <h2 class="song-title fs-5 mb-0">03. Indoor Swimming Pool</h2>
-                                        <span class="meta-tag">2007.07.21 16:10</span>
-                                    </div>
-                                    <p class="mb-0 text-muted">
-                                        Mặt nước phẳng lặng bên trong khu hồ bơi ốp gạch xanh vào buổi chiều mùa hè.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Ảnh 4 -->
-                            <div class="col-12 col-md-6" id="photo-mall">
-                                <div class="retro-panel p-3 h-100">
-                                    <img src="assets/covers/mall.jpg" alt="Trung tâm thương mại đóng cửa" class="gallery-img retro-inset mb-3">
-                                    <div class="d-flex justify-content-between align-items-center mb-1">
-                                        <h2 class="song-title fs-5 mb-0">04. Closed Shopping Atrium</h2>
-                                        <span class="meta-tag">1999.11.28 21:55</span>
-                                    </div>
-                                    <p class="mb-0 text-muted">
-                                        Sảnh chính trung tâm thương mại khi các gian hàng đã hạ cửa cuốn và nhạc nền chuẩn bị tắt.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                <!-- Thanh thông số máy ảnh kỹ thuật số cổ điển -->
+                <div class="camera-hud d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
+                    <span>CAMERA: SONY DIGITAL MAVICA FD-95</span>
+                    <span id="hud-file">FILE: FD_DISK_01.JPG</span>
+                    <span>STORAGE: 3.5" FLOPPY DISK (08 FILES)</span>
                 </div>
+
+                <!-- Khung xem ảnh lớn ở trung tâm -->
+                <section class="retro-panel p-3 mb-4">
+                    <div class="panel-header d-flex justify-content-between align-items-center mb-3">
+                        <span>KHUNG NGẮM ẢNH CHI TIẾT (NHẤN VÀO MỘT TRONG 08 ẢNH BÊN DƯỚI ĐỂ XEM)</span>
+                        <span id="preview-date" class="status-text">2001.10.14 18:42</span>
+                    </div>
+
+                    <div class="row g-4 align-items-center">
+                        <div class="col-12 col-lg-7">
+                            <img
+                                id="preview-image"
+                                src="assets/covers/hallway.jpg"
+                                alt="Ảnh đang chọn"
+                                class="featured-photo-img retro-inset"
+                            >
+                        </div>
+                        <div class="col-12 col-lg-5">
+                            <div class="banner-badge">LIMINAL SPACE ARCHIVE</div>
+                            <h1 id="preview-title" class="song-title mb-2">01. Empty Corridor</h1>
+                            <p id="preview-desc" class="mb-3">
+                                Hành lang tầng 3 sau giờ tan học, ánh đèn huỳnh quang phản chiếu trên sàn gạch cũ tạo cảm giác yên tĩnh và quen thuộc.
+                            </p>
+
+                            <div class="page-banner mb-3">
+                                <div class="meta-label">ALBUM ĐI KÈM</div>
+                                <div id="preview-location" class="meta-value mb-2">DISC 01 — Memories That Never Happened</div>
+                                <div class="meta-label">DANH SÁCH 05 BÀI HÁT RIÊNG CỦA ALBUM</div>
+                                <div id="preview-track" class="meta-mono">01. Empty Hallway | 02. Fluorescent Dreams | 03. Locker Room Echo | 04. Chalkboard Dust | 05. Bell After Class</div>
+                            </div>
+
+                            <a id="preview-play-link" href="index.html?album=Memories%20That%20Never%20Happened" class="retro-button">MỞ PLAYLIST RIÊNG CỦA ALBUM NÀY (05 BÀI) &raquo;</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Dải 08 ảnh bên dưới chia làm 2 hàng x 4 cột để người dùng bấm chọn -->
+                <section>
+                    <div class="panel-header mb-3">DANH SÁCH 08 ẢNH TRONG ĐĨA MỀM A:\DCIM\</div>
+                    <div class="row g-3">
+                        <!-- Ảnh 1 -->
+                        <div class="col-12 col-sm-6 col-lg-3" id="photo-hallway">
+                            <div
+                                class="retro-panel gallery-card p-2 h-100"
+                                data-src="assets/covers/hallway.jpg"
+                                data-file="FILE: FD_DISK_01.JPG"
+                                data-date="2001.10.14 18:42"
+                                data-title="01. Empty Corridor"
+                                data-desc="Hành lang tầng 3 sau giờ tan học, ánh đèn huỳnh quang phản chiếu trên sàn gạch cũ tạo cảm giác yên tĩnh và quen thuộc."
+                                data-location="DISC 01 — Memories That Never Happened"
+                                data-track="01. Empty Hallway | 02. Fluorescent Dreams | 03. Locker Room Echo | 04. Chalkboard Dust | 05. Bell After Class"
+                                data-album="Memories That Never Happened"
+                            >
+                                <img src="assets/covers/hallway.jpg" alt="Hành lang vắng" class="gallery-img retro-inset mb-2">
+                                <div class="fw-bold">01. Empty Corridor</div>
+                                <div class="meta-mono">DISC 01 // 2001.10.14</div>
+                            </div>
+                        </div>
+
+                        <!-- Ảnh 2 -->
+                        <div class="col-12 col-sm-6 col-lg-3" id="photo-station">
+                            <div
+                                class="retro-panel gallery-card p-2 h-100"
+                                data-src="assets/covers/station.jpg"
+                                data-file="FILE: FD_DISK_02.JPG"
+                                data-date="2003.02.09 00:15"
+                                data-title="02. Platform 4 After Midnight"
+                                data-desc="Chuyến tàu cuối cùng rời bến lúc nửa đêm, chỉ còn ánh đèn vàng dọc vạch an toàn và tiếng loa thông báo vọng lại."
+                                data-location="DISC 02 — After Midnight"
+                                data-track="01. Last Train Home | 02. Rain at 2AM | 03. Ticket Booth Static | 04. Subway Tunnel Wind | 05. Yellow Line Fog"
+                                data-album="After Midnight"
+                            >
+                                <img src="assets/covers/station.jpg" alt="Sân ga lúc nửa đêm" class="gallery-img retro-inset mb-2">
+                                <div class="fw-bold">02. Platform 4 Midnight</div>
+                                <div class="meta-mono">DISC 02 // 2003.02.09</div>
+                            </div>
+                        </div>
+
+                        <!-- Ảnh 3 -->
+                        <div class="col-12 col-sm-6 col-lg-3" id="photo-pool">
+                            <div
+                                class="retro-panel gallery-card p-2 h-100"
+                                data-src="assets/covers/pool.jpg"
+                                data-file="FILE: FD_DISK_03.JPG"
+                                data-date="2007.07.21 16:10"
+                                data-title="03. Indoor Swimming Pool"
+                                data-desc="Mặt nước phẳng lặng bên trong khu hồ bơi ốp gạch xanh vào buổi chiều mùa hè khi không còn ai bơi."
+                                data-location="DISC 03 — Poolside Static"
+                                data-track="01. Summer 2007 | 02. Memory Lane | 03. Chlorine Reflections | 04. Blue Tile Ripple | 05. Diving Board Silence"
+                                data-album="Poolside Static"
+                            >
+                                <img src="assets/covers/pool.jpg" alt="Hồ bơi trong nhà" class="gallery-img retro-inset mb-2">
+                                <div class="fw-bold">03. Indoor Pool</div>
+                                <div class="meta-mono">DISC 03 // 2007.07.21</div>
+                            </div>
+                        </div>
+
+                        <!-- Ảnh 4 -->
+                        <div class="col-12 col-sm-6 col-lg-3" id="photo-mall">
+                            <div
+                                class="retro-panel gallery-card p-2 h-100"
+                                data-src="assets/covers/mall.jpg"
+                                data-file="FILE: FD_DISK_04.JPG"
+                                data-date="1999.11.28 21:55"
+                                data-title="04. Closed Shopping Atrium"
+                                data-desc="Sảnh chính trung tâm thương mại khi các gian hàng đã hạ cửa cuốn và nhạc nền chuẩn bị tắt."
+                                data-location="DISC 04 — Sunday Closing Time"
+                                data-track="01. Closed Mall | 02. Escalator Hum | 03. Food Court Neon | 04. Fountain Coins | 05. Mannequin Window"
+                                data-album="Sunday Closing Time"
+                            >
+                                <img src="assets/covers/mall.jpg" alt="Trung tâm thương mại đóng cửa" class="gallery-img retro-inset mb-2">
+                                <div class="fw-bold">04. Closed Mall Atrium</div>
+                                <div class="meta-mono">DISC 04 // 1999.11.28</div>
+                            </div>
+                        </div>
+
+                        <!-- Ảnh 5 -->
+                        <div class="col-12 col-sm-6 col-lg-3" id="photo-office">
+                            <div
+                                class="retro-panel gallery-card p-2 h-100"
+                                data-src="assets/covers/office.jpg"
+                                data-file="FILE: FD_DISK_05.JPG"
+                                data-date="1998.05.19 20:30"
+                                data-title="05. Fluorescent Office Cubicle"
+                                data-desc="Dãy bàn làm việc ngăn vách nỉ sau giờ tan sở, một chiếc màn hình CRT vẫn còn sáng đèn chờ kết nối mạng Dial-Up."
+                                data-location="DISC 05 — Cubicle 1998"
+                                data-track="01. Late Shift Cubicle | 02. Screensaver Maze | 03. Fax Machine Hum | 04. Watercooler Corner | 05. Floppy Drive Click"
+                                data-album="Cubicle 1998"
+                            >
+                                <img src="assets/covers/office.jpg" alt="Văn phòng đèn huỳnh quang" class="gallery-img retro-inset mb-2">
+                                <div class="fw-bold">05. Fluorescent Office</div>
+                                <div class="meta-mono">DISC 05 // 1998.05.19</div>
+                            </div>
+                        </div>
+
+                        <!-- Ảnh 6 -->
+                        <div class="col-12 col-sm-6 col-lg-3" id="photo-parking">
+                            <div
+                                class="retro-panel gallery-card p-2 h-100"
+                                data-src="assets/covers/parking.jpg"
+                                data-file="FILE: FD_DISK_06.JPG"
+                                data-date="2004.09.03 23:12"
+                                data-title="06. Rainy Sodium Parking Lot"
+                                data-desc="Bãi đỗ xe siêu thị sau cơn mưa đêm, ánh đèn cao áp vàng cam phản chiếu lấp lánh trên mặt nhựa đường ướt."
+                                data-location="DISC 06 — Wet Asphalt &amp; Streetlights"
+                                data-track="01. Sodium Streetlight | 02. Distant Highway Rain | 03. Puddle Reflections | 04. 24 Hour Convenience | 05. Wiper Blade Rhythm"
+                                data-album="Wet Asphalt &amp; Streetlights"
+                            >
+                                <img src="assets/covers/parking.jpg" alt="Bãi đỗ xe dưới mưa" class="gallery-img retro-inset mb-2">
+                                <div class="fw-bold">06. Rainy Parking Lot</div>
+                                <div class="meta-mono">DISC 06 // 2004.09.03</div>
+                            </div>
+                        </div>
+
+                        <!-- Ảnh 7 -->
+                        <div class="col-12 col-sm-6 col-lg-3" id="photo-waiting">
+                            <div
+                                class="retro-panel gallery-card p-2 h-100"
+                                data-src="assets/covers/waiting.jpg"
+                                data-file="FILE: FD_DISK_07.JPG"
+                                data-date="2002.04.11 14:05"
+                                data-title="07. Empty Waiting Room"
+                                data-desc="Phòng chờ với hàng ghế đệm xanh rêu và chiếc tivi CRT treo góc tường phát sóng chương trình buổi chiều không tiếng."
+                                data-location="DISC 07 — Lobby Television"
+                                data-track="01. Waiting Room TV | 02. Vending Machine Glow | 03. Weather Channel Loop | 04. Plastic Chair Creak | 05. Midnight Test Pattern"
+                                data-album="Lobby Television"
+                            >
+                                <img src="assets/covers/waiting.jpg" alt="Phòng chờ vắng lặng" class="gallery-img retro-inset mb-2">
+                                <div class="fw-bold">07. Empty Waiting Room</div>
+                                <div class="meta-mono">DISC 07 // 2002.04.11</div>
+                            </div>
+                        </div>
+
+                        <!-- Ảnh 8 -->
+                        <div class="col-12 col-sm-6 col-lg-3" id="photo-stairwell">
+                            <div
+                                class="retro-panel gallery-card p-2 h-100"
+                                data-src="assets/covers/stairwell.jpg"
+                                data-file="FILE: FD_DISK_08.JPG"
+                                data-date="2006.12.02 19:48"
+                                data-title="08. Quiet Concrete Stairwell"
+                                data-desc="Lối cầu thang bộ bằng bê tông dẫn xuống tầng hầm B2 với biển báo EXIT màu xanh lá tỏa sáng dịu."
+                                data-location="DISC 08 — Exit Level B2"
+                                data-track="01. Concrete Stairwell | 02. Basement Fire Door | 03. Fluorescent Flicker B2 | 04. Ventilation Shaft | 05. Emergency Exit Sign"
+                                data-album="Exit Level B2"
+                            >
+                                <img src="assets/covers/stairwell.jpg" alt="Cầu thang bộ yên tĩnh" class="gallery-img retro-inset mb-2">
+                                <div class="fw-bold">08. Quiet Stairwell</div>
+                                <div class="meta-mono">DISC 08 // 2006.12.02</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
             </main>
 
-            <!-- Thanh trạng thái dưới cùng -->
-            <footer class="status-bar d-flex justify-content-between align-items-center p-3">
+            <!-- Thanh trạng thái dưới cùng cửa sổ -->
+            <div class="status-bar d-flex justify-content-between align-items-center p-3">
                 <span>SOURCE: 3.5" FLOPPY DISK (A:\DCIM\)</span>
-                <span>4 IMAGES LOADED — FREE SPACE: 512 KB</span>
-            </footer>
+                <span>DARKROOM MODE ACTIVE — 08 IMAGES LOADED</span>
+            </div>
 
         </div>
+
+        <!-- Chân trang hiển thị thông tin chi tiết ở dưới cùng trang web -->
+        <footer class="site-footer retro-panel mt-3 p-3">
+            <div class="row g-4">
+                <div class="col-12 col-md-5">
+                    <div class="footer-heading">HAKU PLAYER 2001 — AUDIO ARCHIVE</div>
+                    <p class="mb-2">
+                        Trình phát nhạc trực tuyến lấy cảm hứng từ phần mềm máy tính giai đoạn 1998 – 2008,
+                        lưu trữ các bản nhạc ambient và hình ảnh không gian hoài niệm (Liminal Space).
+                    </p>
+                    <div class="meta-mono">AUDIO: 128 KBPS MP3 / 44.1 KHZ STEREO</div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="footer-heading">DANH MỤC TRANG WEB</div>
+                    <ul class="list-unstyled footer-links mb-0">
+                        <li><a href="index.html">&raquo; Trang chủ (Music Player)</a></li>
+                        <li><a href="albums.html">&raquo; Bộ sưu tập CD-ROM Albums</a></li>
+                        <li><a href="gallery.html">&raquo; Thư viện ảnh Liminal</a></li>
+                        <li><a href="about.html">&raquo; Giới thiệu &amp; Gửi yêu cầu</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-4">
+                    <div class="footer-heading">THÔNG TIN ĐỒ ÁN &amp; LIÊN HỆ</div>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-1"><strong>Học phần:</strong> Thiết kế Web</li>
+                        <li class="mb-1"><strong>Công nghệ:</strong> HTML5, CSS3, Bootstrap 5, JS</li>
+                        <li class="mb-1"><strong>Email:</strong> archive@hakuplayer2001.local</li>
+                        <li><strong>Phiên bản:</strong> Build 2001.10 (Desktop Edition)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-2">
+                <span>&copy; 2001 - 2026 HAKU PLAYER PROJECT. ALL RIGHTS RESERVED.</span>
+                <span>BEST VIEWED AT 1400x900 RESOLUTION — CRT DISPLAY MODE</span>
+            </div>
+        </footer>
     </div>
+
+    <script>
+        // Đổi ảnh lớn trên khung ngắm và đường dẫn mở album riêng khi người dùng nhấn vào một thẻ ảnh nhỏ
+        const galleryCards = document.querySelectorAll(".gallery-card");
+        const previewImage = document.querySelector("#preview-image");
+        const hudFile = document.querySelector("#hud-file");
+        const previewDate = document.querySelector("#preview-date");
+        const previewTitle = document.querySelector("#preview-title");
+        const previewDesc = document.querySelector("#preview-desc");
+        const previewLocation = document.querySelector("#preview-location");
+        const previewTrack = document.querySelector("#preview-track");
+        const previewPlayLink = document.querySelector("#preview-play-link");
+
+        galleryCards.forEach(function (card) {
+            card.addEventListener("click", function () {
+                const albumName = card.getAttribute("data-album");
+                previewImage.src = card.getAttribute("data-src");
+                hudFile.textContent = card.getAttribute("data-file");
+                previewDate.textContent = card.getAttribute("data-date");
+                previewTitle.textContent = card.getAttribute("data-title");
+                previewDesc.textContent = card.getAttribute("data-desc");
+                previewLocation.textContent = card.getAttribute("data-location");
+                previewTrack.textContent = card.getAttribute("data-track");
+                previewPlayLink.href = "index.html?album=" + encodeURIComponent(albumName);
+            });
+        });
+    </script>
 </body>
 </html>
-

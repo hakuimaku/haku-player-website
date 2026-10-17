@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haku Player 2001 - Danh Sách Album</title>
+    <title>Haku Player 2001 - Danh Sách 08 Album</title>
     <!-- Thư viện Bootstrap 5 hỗ trợ chia bố cục và responsive -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Các file CSS giao diện retro và hiệu ứng màn hình cũ -->
@@ -11,16 +11,16 @@
     <link rel="stylesheet" href="css/crt.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body>
+<body class="page-albums">
     <!-- Lớp phủ hạt nhiễu nhẹ tạo cảm giác màn hình analog -->
     <div class="noise-layer"></div>
 
     <div class="main-container py-3 py-md-4 px-2 px-md-3">
         <div class="app-window retro-panel">
 
-            <!-- Thanh tiêu đề cửa sổ -->
+            <!-- Thanh tiêu đề cửa sổ tông màu Nâu Hổ Phách riêng của trang Albums -->
             <header class="titlebar d-flex justify-content-between align-items-center">
-                <span class="titlebar-title">HAKU PLAYER 2001 — ALBUM ARCHIVE</span>
+                <span class="titlebar-title">CD-ROM ARCHIVE EXPLORER — 08 ALBUM CATALOG (1998 – 2008)</span>
                 <div class="titlebar-controls d-flex gap-1">
                     <button type="button" class="retro-button titlebar-btn" aria-label="Thu nhỏ">_</button>
                     <button type="button" class="retro-button titlebar-btn" aria-label="Phóng to">&#9633;</button>
@@ -49,14 +49,23 @@
                     <li class="menu-item">
                         <a href="albums.html" class="menu-link active-page">ALBUMS</a>
                         <ul class="submenu list-unstyled">
-                            <li class="submenu-item"><a href="albums.html">Tất cả Album</a></li>
+                            <li class="submenu-item"><a href="albums.html">Tất cả 08 Album</a></li>
                             <li class="submenu-item has-children">
-                                <span>Theo chủ đề &raquo;</span>
+                                <span>Đĩa CD 01 – 04 &raquo;</span>
                                 <ul class="submenu submenu-level2 list-unstyled">
                                     <li class="submenu-item"><a href="#album-memories">Memories That Never Happened</a></li>
                                     <li class="submenu-item"><a href="#album-midnight">After Midnight</a></li>
                                     <li class="submenu-item"><a href="#album-poolside">Poolside Static</a></li>
                                     <li class="submenu-item"><a href="#album-mall">Sunday Closing Time</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu-item has-children">
+                                <span>Đĩa CD 05 – 08 &raquo;</span>
+                                <ul class="submenu submenu-level2 list-unstyled">
+                                    <li class="submenu-item"><a href="#album-office">Cubicle 1998</a></li>
+                                    <li class="submenu-item"><a href="#album-parking">Wet Asphalt &amp; Streetlights</a></li>
+                                    <li class="submenu-item"><a href="#album-waiting">Lobby Television</a></li>
+                                    <li class="submenu-item"><a href="#album-stairwell">Exit Level B2</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -65,14 +74,23 @@
                     <li class="menu-item">
                         <a href="gallery.html" class="menu-link">LIMINAL GALLERY</a>
                         <ul class="submenu list-unstyled">
-                            <li class="submenu-item"><a href="gallery.html">Bộ sưu tập ảnh 2001</a></li>
+                            <li class="submenu-item"><a href="gallery.html">Bộ sưu tập 08 ảnh 2001</a></li>
                             <li class="submenu-item has-children">
-                                <span>Địa điểm chụp &raquo;</span>
+                                <span>Đĩa mềm A (01 – 04) &raquo;</span>
                                 <ul class="submenu submenu-level2 list-unstyled">
-                                    <li class="submenu-item"><a href="gallery.html#photo-hallway">Empty Hallway</a></li>
-                                    <li class="submenu-item"><a href="gallery.html#photo-station">Midnight Station</a></li>
-                                    <li class="submenu-item"><a href="gallery.html#photo-pool">Indoor Pool</a></li>
-                                    <li class="submenu-item"><a href="gallery.html#photo-mall">Closed Mall</a></li>
+                                    <li class="submenu-item"><a href="gallery.html#photo-hallway">01. Empty Hallway</a></li>
+                                    <li class="submenu-item"><a href="gallery.html#photo-station">02. Midnight Station</a></li>
+                                    <li class="submenu-item"><a href="gallery.html#photo-pool">03. Indoor Pool</a></li>
+                                    <li class="submenu-item"><a href="gallery.html#photo-mall">04. Closed Mall</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu-item has-children">
+                                <span>Đĩa mềm B (05 – 08) &raquo;</span>
+                                <ul class="submenu submenu-level2 list-unstyled">
+                                    <li class="submenu-item"><a href="gallery.html#photo-office">05. Fluorescent Office</a></li>
+                                    <li class="submenu-item"><a href="gallery.html#photo-parking">06. Rainy Parking Lot</a></li>
+                                    <li class="submenu-item"><a href="gallery.html#photo-waiting">07. Empty Waiting Room</a></li>
+                                    <li class="submenu-item"><a href="gallery.html#photo-stairwell">08. Quiet Stairwell</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -88,135 +106,313 @@
                 </ul>
             </nav>
 
-            <!-- Bố cục chính -->
-            <main class="main-layout row g-0">
-                <!-- Khu vực danh mục bên trái -->
-                <aside class="sidebar col-md-3 col-lg-2 d-none d-md-block p-3">
-                    <div class="sidebar-section mb-4">
-                        <div class="sidebar-heading">NAVIGATION</div>
-                        <ul class="list-unstyled mb-0">
-                            <li class="sidebar-item"><a href="index.html">Music Player</a></li>
-                            <li class="sidebar-item active"><a href="albums.html">Album Archive</a></li>
-                            <li class="sidebar-item"><a href="gallery.html">Liminal Photos</a></li>
-                            <li class="sidebar-item"><a href="about.html">System &amp; Contact</a></li>
-                        </ul>
+            <!-- Bố cục toàn khung dành riêng cho trang Kệ Đĩa 08 Album -->
+            <main class="main-layout p-3">
+
+                <!-- Banner giới thiệu bộ sưu tập đĩa CD-ROM -->
+                <section class="page-banner mb-4">
+                    <div class="row align-items-center g-3">
+                        <div class="col-12 col-lg-8">
+                            <span class="banner-badge">CD-ROM COLLECTION // WARM SEPIA EDITION</span>
+                            <h1 class="song-title mb-1">KHO LƯU TRỮ 08 ALBUM &amp; BĂNG ĐĨA CŨ</h1>
+                            <p class="mb-0">
+                                Tuyển tập 08 đĩa CD-ROM ghi lại những giai điệu ambient từ hành lang trường học,
+                                sân ga đêm, văn phòng đèn huỳnh quang và bãi đỗ xe dưới mưa.
+                            </p>
+                        </div>
+                        <div class="col-12 col-lg-4 text-lg-end">
+                            <a href="index.html" class="retro-button">QUAY VỀ TRÌNH PHÁT NHẠC &raquo;</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Lưới 4 cột x 2 hàng trưng bày 08 đĩa CD-ROM -->
+                <section class="mb-4">
+                    <div class="panel-header d-flex justify-content-between align-items-center mb-3">
+                        <span>DANH SÁCH 08 ĐĨA CD-ROM TRONG KHO LƯU TRỮ</span>
+                        <span class="status-text">FORMAT: AUDIO CD / MP3 128KBPS</span>
                     </div>
 
-                    <div class="sidebar-section">
-                        <div class="sidebar-heading">RELEASE YEAR</div>
-                        <ul class="list-unstyled mb-0">
-                            <li class="sidebar-item">1999 Releases</li>
-                            <li class="sidebar-item">2001 Releases</li>
-                            <li class="sidebar-item">2004 Releases</li>
-                            <li class="sidebar-item">2007 Releases</li>
-                        </ul>
+                    <div class="row g-3">
+                        <!-- Đĩa 1 (05 bài) -->
+                        <div class="col-12 col-sm-6 col-xl-3" id="album-memories">
+                            <div class="retro-panel p-3 h-100 d-flex flex-column">
+                                <img src="assets/covers/hallway.jpg" alt="Memories That Never Happened" class="album-card-img retro-inset mb-3">
+                                <div class="meta-label">DISC 01 — YEAR 2001 (05 TRACKS)</div>
+                                <h2 class="song-title fs-5 mb-1">Memories That Never Happened</h2>
+                                <p class="song-artist fs-6 mb-2">Quiet Corridor</p>
+                                <div class="meta-mono mb-3 flex-grow-1">
+                                    <div>01. Empty Hallway (00:18)</div>
+                                    <div>02. Fluorescent Dreams (00:24)</div>
+                                    <div>03. Locker Room Echo (00:20)</div>
+                                    <div>04. Chalkboard Dust (00:19)</div>
+                                    <div>05. Bell After Class (00:22)</div>
+                                </div>
+                                <a href="index.html?album=Memories%20That%20Never%20Happened" class="retro-button text-center w-100">NGHE ĐĨA NÀY (05 BÀI)</a>
+                            </div>
+                        </div>
+
+                        <!-- Đĩa 2 (05 bài) -->
+                        <div class="col-12 col-sm-6 col-xl-3" id="album-midnight">
+                            <div class="retro-panel p-3 h-100 d-flex flex-column">
+                                <img src="assets/covers/station.jpg" alt="After Midnight" class="album-card-img retro-inset mb-3">
+                                <div class="meta-label">DISC 02 — YEAR 2003 (05 TRACKS)</div>
+                                <h2 class="song-title fs-5 mb-1">After Midnight</h2>
+                                <p class="song-artist fs-6 mb-2">Platform 4</p>
+                                <div class="meta-mono mb-3 flex-grow-1">
+                                    <div>01. Last Train Home (00:21)</div>
+                                    <div>02. Rain at 2AM (00:19)</div>
+                                    <div>03. Ticket Booth Static (00:22)</div>
+                                    <div>04. Subway Tunnel Wind (00:18)</div>
+                                    <div>05. Yellow Line Fog (00:21)</div>
+                                </div>
+                                <a href="index.html?album=After%20Midnight" class="retro-button text-center w-100">NGHE ĐĨA NÀY (05 BÀI)</a>
+                            </div>
+                        </div>
+
+                        <!-- Đĩa 3 (05 bài) -->
+                        <div class="col-12 col-sm-6 col-xl-3" id="album-poolside">
+                            <div class="retro-panel p-3 h-100 d-flex flex-column">
+                                <img src="assets/covers/pool.jpg" alt="Poolside Static" class="album-card-img retro-inset mb-3">
+                                <div class="meta-label">DISC 03 — YEAR 2007 (05 TRACKS)</div>
+                                <h2 class="song-title fs-5 mb-1">Poolside Static</h2>
+                                <p class="song-artist fs-6 mb-2">Afternoon Echo</p>
+                                <div class="meta-mono mb-3 flex-grow-1">
+                                    <div>01. Summer 2007 (00:16)</div>
+                                    <div>02. Memory Lane (00:20)</div>
+                                    <div>03. Chlorine Reflections (00:23)</div>
+                                    <div>04. Blue Tile Ripple (00:20)</div>
+                                    <div>05. Diving Board Silence (00:23)</div>
+                                </div>
+                                <a href="index.html?album=Poolside%20Static" class="retro-button text-center w-100">NGHE ĐĨA NÀY (05 BÀI)</a>
+                            </div>
+                        </div>
+
+                        <!-- Đĩa 4 (05 bài) -->
+                        <div class="col-12 col-sm-6 col-xl-3" id="album-mall">
+                            <div class="retro-panel p-3 h-100 d-flex flex-column">
+                                <img src="assets/covers/mall.jpg" alt="Sunday Closing Time" class="album-card-img retro-inset mb-3">
+                                <div class="meta-label">DISC 04 — YEAR 1999 (05 TRACKS)</div>
+                                <h2 class="song-title fs-5 mb-1">Sunday Closing Time</h2>
+                                <p class="song-artist fs-6 mb-2">Atrium Ghosts</p>
+                                <div class="meta-mono mb-3 flex-grow-1">
+                                    <div>01. Closed Mall (00:22)</div>
+                                    <div>02. Escalator Hum (00:18)</div>
+                                    <div>03. Food Court Neon (00:24)</div>
+                                    <div>04. Fountain Coins (00:17)</div>
+                                    <div>05. Mannequin Window (00:24)</div>
+                                </div>
+                                <a href="index.html?album=Sunday%20Closing%20Time" class="retro-button text-center w-100">NGHE ĐĨA NÀY (05 BÀI)</a>
+                            </div>
+                        </div>
+
+                        <!-- Đĩa 5 (05 bài) -->
+                        <div class="col-12 col-sm-6 col-xl-3" id="album-office">
+                            <div class="retro-panel p-3 h-100 d-flex flex-column">
+                                <img src="assets/covers/office.jpg" alt="Cubicle 1998" class="album-card-img retro-inset mb-3">
+                                <div class="meta-label">DISC 05 — YEAR 1998 (05 TRACKS)</div>
+                                <h2 class="song-title fs-5 mb-1">Cubicle 1998</h2>
+                                <p class="song-artist fs-6 mb-2">Dial-Up Dreams</p>
+                                <div class="meta-mono mb-3 flex-grow-1">
+                                    <div>01. Late Shift Cubicle (00:23)</div>
+                                    <div>02. Screensaver Maze (00:19)</div>
+                                    <div>03. Fax Machine Hum (00:19)</div>
+                                    <div>04. Watercooler Corner (00:21)</div>
+                                    <div>05. Floppy Drive Click (00:22)</div>
+                                </div>
+                                <a href="index.html?album=Cubicle%201998" class="retro-button text-center w-100">NGHE ĐĨA NÀY (05 BÀI)</a>
+                            </div>
+                        </div>
+
+                        <!-- Đĩa 6 (05 bài) -->
+                        <div class="col-12 col-sm-6 col-xl-3" id="album-parking">
+                            <div class="retro-panel p-3 h-100 d-flex flex-column">
+                                <img src="assets/covers/parking.jpg" alt="Wet Asphalt & Streetlights" class="album-card-img retro-inset mb-3">
+                                <div class="meta-label">DISC 06 — YEAR 2004 (05 TRACKS)</div>
+                                <h2 class="song-title fs-5 mb-1">Wet Asphalt &amp; Streetlights</h2>
+                                <p class="song-artist fs-6 mb-2">Sodium Vapor</p>
+                                <div class="meta-mono mb-3 flex-grow-1">
+                                    <div>01. Sodium Streetlight (00:17)</div>
+                                    <div>02. Distant Highway Rain (00:21)</div>
+                                    <div>03. Puddle Reflections (00:18)</div>
+                                    <div>04. 24 Hour Convenience (00:20)</div>
+                                    <div>05. Wiper Blade Rhythm (00:25)</div>
+                                </div>
+                                <a href="index.html?album=Wet%20Asphalt%20%26%20Streetlights" class="retro-button text-center w-100">NGHE ĐĨA NÀY (05 BÀI)</a>
+                            </div>
+                        </div>
+
+                        <!-- Đĩa 7 (05 bài) -->
+                        <div class="col-12 col-sm-6 col-xl-3" id="album-waiting">
+                            <div class="retro-panel p-3 h-100 d-flex flex-column">
+                                <img src="assets/covers/waiting.jpg" alt="Lobby Television" class="album-card-img retro-inset mb-3">
+                                <div class="meta-label">DISC 07 — YEAR 2002 (05 TRACKS)</div>
+                                <h2 class="song-title fs-5 mb-1">Lobby Television</h2>
+                                <p class="song-artist fs-6 mb-2">Channel 03</p>
+                                <div class="meta-mono mb-3 flex-grow-1">
+                                    <div>01. Waiting Room TV (00:25)</div>
+                                    <div>02. Vending Machine Glow (00:18)</div>
+                                    <div>03. Weather Channel Loop (00:19)</div>
+                                    <div>04. Plastic Chair Creak (00:22)</div>
+                                    <div>05. Midnight Test Pattern (00:18)</div>
+                                </div>
+                                <a href="index.html?album=Lobby%20Television" class="retro-button text-center w-100">NGHE ĐĨA NÀY (05 BÀI)</a>
+                            </div>
+                        </div>
+
+                        <!-- Đĩa 8 (05 bài) -->
+                        <div class="col-12 col-sm-6 col-xl-3" id="album-stairwell">
+                            <div class="retro-panel p-3 h-100 d-flex flex-column">
+                                <img src="assets/covers/stairwell.jpg" alt="Exit Level B2" class="album-card-img retro-inset mb-3">
+                                <div class="meta-label">DISC 08 — YEAR 2006 (05 TRACKS)</div>
+                                <h2 class="song-title fs-5 mb-1">Exit Level B2</h2>
+                                <p class="song-artist fs-6 mb-2">Concrete Echo</p>
+                                <div class="meta-mono mb-3 flex-grow-1">
+                                    <div>01. Concrete Stairwell (00:20)</div>
+                                    <div>02. Basement Fire Door (00:22)</div>
+                                    <div>03. Fluorescent Flicker B2 (00:21)</div>
+                                    <div>04. Ventilation Shaft (00:23)</div>
+                                    <div>05. Emergency Exit Sign (00:20)</div>
+                                </div>
+                                <a href="index.html?album=Exit%20Level%20B2" class="retro-button text-center w-100">NGHE ĐĨA NÀY (05 BÀI)</a>
+                            </div>
+                        </div>
                     </div>
-                </aside>
+                </section>
 
-                <!-- Khu vực hiển thị danh sách các Album -->
-                <div class="content-panel col-12 col-md-9 col-lg-10 p-3">
-                    <section class="retro-panel p-3 mb-3">
-                        <div class="panel-header d-flex justify-content-between align-items-center mb-3">
-                            <span>CD-ROM ALBUM CATALOG (1998 – 2008)</span>
-                            <span class="status-text">04 DISCS FOUND</span>
-                        </div>
+                <!-- Bảng thông số kỹ thuật 08 đĩa CD-ROM (Tổng 40 bài hát) -->
+                <section class="retro-panel p-3">
+                    <div class="panel-header mb-2">BẢNG THÔNG SỐ LƯU TRỮ 08 ĐĨA CD-ROM — TỔNG 40 TRACKS RIÊNG BIỆT (NHẤN VÀO DÒNG ĐỂ MỞ RIÊNG ALBUM ĐÓ)</div>
+                    <div class="table-responsive retro-inset">
+                        <table class="table table-borderless mb-0 playlist-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">MÃ ĐĨA</th>
+                                    <th scope="col">TÊN ALBUM</th>
+                                    <th scope="col">NGHỆ SĨ</th>
+                                    <th scope="col">DANH SÁCH 05 TRACK RIÊNG</th>
+                                    <th scope="col">SỐ BÀI</th>
+                                    <th scope="col" class="text-end">MỞ PLAYLIST</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="playlist-row" onclick="window.location.href='index.html?album=Memories%20That%20Never%20Happened'">
+                                    <td class="col-num">CD-01</td>
+                                    <td class="fw-bold">Memories That Never Happened</td>
+                                    <td>Quiet Corridor</td>
+                                    <td>Empty Hallway, Fluorescent Dreams, Locker Room Echo, Chalkboard Dust, Bell After Class</td>
+                                    <td>05 Tracks</td>
+                                    <td class="text-end col-time">MỞ ĐĨA &raquo;</td>
+                                </tr>
+                                <tr class="playlist-row" onclick="window.location.href='index.html?album=After%20Midnight'">
+                                    <td class="col-num">CD-02</td>
+                                    <td class="fw-bold">After Midnight</td>
+                                    <td>Platform 4</td>
+                                    <td>Last Train Home, Rain at 2AM, Ticket Booth Static, Subway Tunnel Wind, Yellow Line Fog</td>
+                                    <td>05 Tracks</td>
+                                    <td class="text-end col-time">MỞ ĐĨA &raquo;</td>
+                                </tr>
+                                <tr class="playlist-row" onclick="window.location.href='index.html?album=Poolside%20Static'">
+                                    <td class="col-num">CD-03</td>
+                                    <td class="fw-bold">Poolside Static</td>
+                                    <td>Afternoon Echo</td>
+                                    <td>Summer 2007, Memory Lane, Chlorine Reflections, Blue Tile Ripple, Diving Board Silence</td>
+                                    <td>05 Tracks</td>
+                                    <td class="text-end col-time">MỞ ĐĨA &raquo;</td>
+                                </tr>
+                                <tr class="playlist-row" onclick="window.location.href='index.html?album=Sunday%20Closing%20Time'">
+                                    <td class="col-num">CD-04</td>
+                                    <td class="fw-bold">Sunday Closing Time</td>
+                                    <td>Atrium Ghosts</td>
+                                    <td>Closed Mall, Escalator Hum, Food Court Neon, Fountain Coins, Mannequin Window</td>
+                                    <td>05 Tracks</td>
+                                    <td class="text-end col-time">MỞ ĐĨA &raquo;</td>
+                                </tr>
+                                <tr class="playlist-row" onclick="window.location.href='index.html?album=Cubicle%201998'">
+                                    <td class="col-num">CD-05</td>
+                                    <td class="fw-bold">Cubicle 1998</td>
+                                    <td>Dial-Up Dreams</td>
+                                    <td>Late Shift Cubicle, Screensaver Maze, Fax Machine Hum, Watercooler Corner, Floppy Drive Click</td>
+                                    <td>05 Tracks</td>
+                                    <td class="text-end col-time">MỞ ĐĨA &raquo;</td>
+                                </tr>
+                                <tr class="playlist-row" onclick="window.location.href='index.html?album=Wet%20Asphalt%20%26%20Streetlights'">
+                                    <td class="col-num">CD-06</td>
+                                    <td class="fw-bold">Wet Asphalt &amp; Streetlights</td>
+                                    <td>Sodium Vapor</td>
+                                    <td>Sodium Streetlight, Distant Highway Rain, Puddle Reflections, 24 Hour Convenience, Wiper Blade Rhythm</td>
+                                    <td>05 Tracks</td>
+                                    <td class="text-end col-time">MỞ ĐĨA &raquo;</td>
+                                </tr>
+                                <tr class="playlist-row" onclick="window.location.href='index.html?album=Lobby%20Television'">
+                                    <td class="col-num">CD-07</td>
+                                    <td class="fw-bold">Lobby Television</td>
+                                    <td>Channel 03</td>
+                                    <td>Waiting Room TV, Vending Machine Glow, Weather Channel Loop, Plastic Chair Creak, Midnight Test Pattern</td>
+                                    <td>05 Tracks</td>
+                                    <td class="text-end col-time">MỞ ĐĨA &raquo;</td>
+                                </tr>
+                                <tr class="playlist-row" onclick="window.location.href='index.html?album=Exit%20Level%20B2'">
+                                    <td class="col-num">CD-08</td>
+                                    <td class="fw-bold">Exit Level B2</td>
+                                    <td>Concrete Echo</td>
+                                    <td>Concrete Stairwell, Basement Fire Door, Fluorescent Flicker B2, Ventilation Shaft, Emergency Exit Sign</td>
+                                    <td>05 Tracks</td>
+                                    <td class="text-end col-time">MỞ ĐĨA &raquo;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
 
-                        <div class="row g-4">
-                            <!-- Album 1 -->
-                            <div class="col-12 col-md-6" id="album-memories">
-                                <div class="retro-panel p-3 h-100">
-                                    <div class="row g-3 align-items-center">
-                                        <div class="col-sm-5">
-                                            <img src="assets/covers/hallway.jpg" alt="Memories That Never Happened" class="album-card-img retro-inset">
-                                        </div>
-                                        <div class="col-sm-7">
-                                            <div class="meta-label">DISC 01 — 2001</div>
-                                            <h2 class="song-title fs-4 mb-1">Memories That Never Happened</h2>
-                                            <p class="song-artist fs-6 mb-2">Unknown Artist / Quiet Corridor</p>
-                                            <div class="meta-mono mb-3">
-                                                <div>01. Empty Hallway (00:18)</div>
-                                                <div>02. Fluorescent Dreams (00:24)</div>
-                                            </div>
-                                            <a href="index.html" class="retro-button">LOAD DISC IN PLAYER</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Album 2 -->
-                            <div class="col-12 col-md-6" id="album-midnight">
-                                <div class="retro-panel p-3 h-100">
-                                    <div class="row g-3 align-items-center">
-                                        <div class="col-sm-5">
-                                            <img src="assets/covers/station.jpg" alt="After Midnight" class="album-card-img retro-inset">
-                                        </div>
-                                        <div class="col-sm-7">
-                                            <div class="meta-label">DISC 02 — 2003</div>
-                                            <h2 class="song-title fs-4 mb-1">After Midnight</h2>
-                                            <p class="song-artist fs-6 mb-2">Unknown Artist / Platform 4</p>
-                                            <div class="meta-mono mb-3">
-                                                <div>01. Last Train Home (00:21)</div>
-                                                <div>02. Rain at 2AM (00:19)</div>
-                                            </div>
-                                            <a href="index.html" class="retro-button">LOAD DISC IN PLAYER</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Album 3 -->
-                            <div class="col-12 col-md-6" id="album-poolside">
-                                <div class="retro-panel p-3 h-100">
-                                    <div class="row g-3 align-items-center">
-                                        <div class="col-sm-5">
-                                            <img src="assets/covers/pool.jpg" alt="Poolside Static" class="album-card-img retro-inset">
-                                        </div>
-                                        <div class="col-sm-7">
-                                            <div class="meta-label">DISC 03 — 2007</div>
-                                            <h2 class="song-title fs-4 mb-1">Poolside Static</h2>
-                                            <p class="song-artist fs-6 mb-2">Afternoon Echo</p>
-                                            <div class="meta-mono mb-3">
-                                                <div>01. Summer 2007 (00:16)</div>
-                                                <div>02. Memory Lane (00:20)</div>
-                                            </div>
-                                            <a href="index.html" class="retro-button">LOAD DISC IN PLAYER</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Album 4 -->
-                            <div class="col-12 col-md-6" id="album-mall">
-                                <div class="retro-panel p-3 h-100">
-                                    <div class="row g-3 align-items-center">
-                                        <div class="col-sm-5">
-                                            <img src="assets/covers/mall.jpg" alt="Sunday Closing Time" class="album-card-img retro-inset">
-                                        </div>
-                                        <div class="col-sm-7">
-                                            <div class="meta-label">DISC 04 — 1999</div>
-                                            <h2 class="song-title fs-4 mb-1">Sunday Closing Time</h2>
-                                            <p class="song-artist fs-6 mb-2">Atrium Ghosts</p>
-                                            <div class="meta-mono mb-3">
-                                                <div>01. Closed Mall (00:22)</div>
-                                            </div>
-                                            <a href="index.html" class="retro-button">LOAD DISC IN PLAYER</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
             </main>
 
-            <!-- Thanh trạng thái dưới cùng -->
-            <footer class="status-bar d-flex justify-content-between align-items-center p-3">
+            <!-- Thanh trạng thái dưới cùng cửa sổ -->
+            <div class="status-bar d-flex justify-content-between align-items-center p-3">
                 <span>ARCHIVE PATH: D:\MUSIC\ALBUMS\2001\</span>
-                <span>TOTAL: 04 ALBUMS / 07 TRACKS (128 KBPS MP3)</span>
-            </footer>
+                <span>TOTAL: 08 ALBUMS / 20 TRACKS (128 KBPS MP3)</span>
+            </div>
 
         </div>
+
+        <!-- Chân trang hiển thị thông tin chi tiết ở dưới cùng trang web -->
+        <footer class="site-footer retro-panel mt-3 p-3">
+            <div class="row g-4">
+                <div class="col-12 col-md-5">
+                    <div class="footer-heading">HAKU PLAYER 2001 — AUDIO ARCHIVE</div>
+                    <p class="mb-2">
+                        Trình phát nhạc trực tuyến lấy cảm hứng từ phần mềm máy tính giai đoạn 1998 – 2008,
+                        lưu trữ các bản nhạc ambient và hình ảnh không gian hoài niệm (Liminal Space).
+                    </p>
+                    <div class="meta-mono">AUDIO: 128 KBPS MP3 / 44.1 KHZ STEREO</div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="footer-heading">DANH MỤC TRANG WEB</div>
+                    <ul class="list-unstyled footer-links mb-0">
+                        <li><a href="index.html">&raquo; Trang chủ (Music Player)</a></li>
+                        <li><a href="albums.html">&raquo; Bộ sưu tập CD-ROM Albums</a></li>
+                        <li><a href="gallery.html">&raquo; Thư viện ảnh Liminal</a></li>
+                        <li><a href="about.html">&raquo; Giới thiệu &amp; Gửi yêu cầu</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-4">
+                    <div class="footer-heading">THÔNG TIN ĐỒ ÁN &amp; LIÊN HỆ</div>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-1"><strong>Học phần:</strong> Thiết kế Web</li>
+                        <li class="mb-1"><strong>Công nghệ:</strong> HTML5, CSS3, Bootstrap 5, JS</li>
+                        <li class="mb-1"><strong>Email:</strong> archive@hakuplayer2001.local</li>
+                        <li><strong>Phiên bản:</strong> Build 2001.10 (Desktop Edition)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-2">
+                <span>&copy; 2001 - 2026 HAKU PLAYER PROJECT. ALL RIGHTS RESERVED.</span>
+                <span>BEST VIEWED AT 1400x900 RESOLUTION — CRT DISPLAY MODE</span>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
-

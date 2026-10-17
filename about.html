@@ -11,16 +11,16 @@
     <link rel="stylesheet" href="css/crt.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body>
+<body class="page-about">
     <!-- Lớp phủ hạt nhiễu nhẹ tạo cảm giác màn hình analog -->
     <div class="noise-layer"></div>
 
     <div class="main-container py-3 py-md-4 px-2 px-md-3">
         <div class="app-window retro-panel">
 
-            <!-- Thanh tiêu đề cửa sổ -->
+            <!-- Thanh tiêu đề cửa sổ tông Tím Xám Control Panel riêng của trang About -->
             <header class="titlebar d-flex justify-content-between align-items-center">
-                <span class="titlebar-title">HAKU PLAYER 2001 — SYSTEM INFO &amp; FEEDBACK</span>
+                <span class="titlebar-title">CONTROL PANEL — SYSTEM PROPERTIES &amp; GUESTBOOK</span>
                 <div class="titlebar-controls d-flex gap-1">
                     <button type="button" class="retro-button titlebar-btn" aria-label="Thu nhỏ">_</button>
                     <button type="button" class="retro-button titlebar-btn" aria-label="Phóng to">&#9633;</button>
@@ -49,14 +49,23 @@
                     <li class="menu-item">
                         <a href="albums.html" class="menu-link">ALBUMS</a>
                         <ul class="submenu list-unstyled">
-                            <li class="submenu-item"><a href="albums.html">Tất cả Album</a></li>
+                            <li class="submenu-item"><a href="albums.html">Tất cả 08 Album</a></li>
                             <li class="submenu-item has-children">
-                                <span>Theo chủ đề &raquo;</span>
+                                <span>Đĩa CD 01 – 04 &raquo;</span>
                                 <ul class="submenu submenu-level2 list-unstyled">
                                     <li class="submenu-item"><a href="albums.html#album-memories">Memories That Never Happened</a></li>
                                     <li class="submenu-item"><a href="albums.html#album-midnight">After Midnight</a></li>
                                     <li class="submenu-item"><a href="albums.html#album-poolside">Poolside Static</a></li>
                                     <li class="submenu-item"><a href="albums.html#album-mall">Sunday Closing Time</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu-item has-children">
+                                <span>Đĩa CD 05 – 08 &raquo;</span>
+                                <ul class="submenu submenu-level2 list-unstyled">
+                                    <li class="submenu-item"><a href="albums.html#album-office">Cubicle 1998</a></li>
+                                    <li class="submenu-item"><a href="albums.html#album-parking">Wet Asphalt &amp; Streetlights</a></li>
+                                    <li class="submenu-item"><a href="albums.html#album-waiting">Lobby Television</a></li>
+                                    <li class="submenu-item"><a href="albums.html#album-stairwell">Exit Level B2</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -65,14 +74,23 @@
                     <li class="menu-item">
                         <a href="gallery.html" class="menu-link">LIMINAL GALLERY</a>
                         <ul class="submenu list-unstyled">
-                            <li class="submenu-item"><a href="gallery.html">Bộ sưu tập ảnh 2001</a></li>
+                            <li class="submenu-item"><a href="gallery.html">Bộ sưu tập 08 ảnh 2001</a></li>
                             <li class="submenu-item has-children">
-                                <span>Địa điểm chụp &raquo;</span>
+                                <span>Đĩa mềm A (01 – 04) &raquo;</span>
                                 <ul class="submenu submenu-level2 list-unstyled">
-                                    <li class="submenu-item"><a href="gallery.html#photo-hallway">Empty Hallway</a></li>
-                                    <li class="submenu-item"><a href="gallery.html#photo-station">Midnight Station</a></li>
-                                    <li class="submenu-item"><a href="gallery.html#photo-pool">Indoor Pool</a></li>
-                                    <li class="submenu-item"><a href="gallery.html#photo-mall">Closed Mall</a></li>
+                                    <li class="submenu-item"><a href="gallery.html#photo-hallway">01. Empty Hallway</a></li>
+                                    <li class="submenu-item"><a href="gallery.html#photo-station">02. Midnight Station</a></li>
+                                    <li class="submenu-item"><a href="gallery.html#photo-pool">03. Indoor Pool</a></li>
+                                    <li class="submenu-item"><a href="gallery.html#photo-mall">04. Closed Mall</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu-item has-children">
+                                <span>Đĩa mềm B (05 – 08) &raquo;</span>
+                                <ul class="submenu submenu-level2 list-unstyled">
+                                    <li class="submenu-item"><a href="gallery.html#photo-office">05. Fluorescent Office</a></li>
+                                    <li class="submenu-item"><a href="gallery.html#photo-parking">06. Rainy Parking Lot</a></li>
+                                    <li class="submenu-item"><a href="gallery.html#photo-waiting">07. Empty Waiting Room</a></li>
+                                    <li class="submenu-item"><a href="gallery.html#photo-stairwell">08. Quiet Stairwell</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -88,122 +106,154 @@
                 </ul>
             </nav>
 
-            <!-- Bố cục chính -->
-            <main class="main-layout row g-0">
-                <!-- Khu vực danh mục bên trái -->
-                <aside class="sidebar col-md-3 col-lg-2 d-none d-md-block p-3">
-                    <div class="sidebar-section mb-4">
-                        <div class="sidebar-heading">NAVIGATION</div>
-                        <ul class="list-unstyled mb-0">
-                            <li class="sidebar-item"><a href="index.html">Music Player</a></li>
-                            <li class="sidebar-item"><a href="albums.html">Album Archive</a></li>
-                            <li class="sidebar-item"><a href="gallery.html">Liminal Photos</a></li>
-                            <li class="sidebar-item active"><a href="about.html">System &amp; Contact</a></li>
-                        </ul>
+            <!-- Bố cục dạng Hộp thoại Control Panel 3 tầng dành riêng cho trang Giới thiệu -->
+            <main class="main-layout p-3">
+
+                <!-- Tầng 1: Hộp thoại giới thiệu tổng quan -->
+                <section class="page-banner mb-4">
+                    <span class="banner-badge">SYSTEM CONTROL PANEL // BUILD 2001.10</span>
+                    <h1 class="song-title mb-2">THÔNG TIN HỆ THỐNG &amp; SỔ LƯU BÚT (GUESTBOOK)</h1>
+                    <p class="mb-0">
+                        <strong>Haku Player 2001</strong> được thiết kế theo phong cách phần mềm máy tính để bàn cổ điển
+                        (Windows 98 / 2000), lưu trữ 08 đĩa CD-ROM Album, 08 bức ảnh không gian Liminal và 40 bản nhạc ambient riêng biệt (05 bài mỗi đĩa).
+                    </p>
+                </section>
+
+                <!-- Tầng 2: 3 thẻ thông số phần cứng cổ điển -->
+                <section class="row g-3 mb-4">
+                    <div class="col-12 col-md-4">
+                        <div class="retro-panel p-3 h-100">
+                            <div class="panel-header mb-2">01. PROCESSOR &amp; MEMORY</div>
+                            <div class="meta-value mb-1">Intel Pentium II 300 MHz</div>
+                            <div class="meta-mono text-muted">64 MB SDRAM PC100 — SYSTEM OK</div>
+                        </div>
                     </div>
 
-                    <div class="sidebar-section">
-                        <div class="sidebar-heading">DOCUMENTS</div>
-                        <ul class="list-unstyled mb-0">
-                            <li class="sidebar-item"><a href="manual-frame.html" target="about-frame">USER_MANUAL.TXT</a></li>
-                            <li class="sidebar-item"><a href="info-frame.html" target="about-frame">ARCHIVE_LOG.TXT</a></li>
-                        </ul>
+                    <div class="col-12 col-md-4">
+                        <div class="retro-panel p-3 h-100">
+                            <div class="panel-header mb-2">02. AUDIO HARDWARE</div>
+                            <div class="meta-value mb-1">SoundBlaster 16 Compatible</div>
+                            <div class="meta-mono text-muted">44.1 KHZ / 16-BIT STEREO OUTPUT</div>
+                        </div>
                     </div>
-                </aside>
 
-                <!-- Nội dung giới thiệu, cấu hình hệ thống và biểu mẫu liên hệ -->
-                <div class="content-panel col-12 col-md-9 col-lg-10 p-3">
-                    <div class="row g-3 mb-3">
-                        <!-- Thông tin giới thiệu và bảng cấu hình -->
-                        <div class="col-12 col-lg-7">
-                            <section class="retro-panel p-3 h-100">
-                                <div class="panel-header mb-3">ABOUT HAKU PLAYER 2001</div>
-                                <p>
-                                    <strong>Haku Player 2001</strong> là website nghe nhạc lấy cảm hứng từ các phần mềm
-                                    nghe nhạc MP3 trên máy tính giai đoạn 1998 – 2008 kết hợp cùng không gian hoài niệm (Liminal Space).
-                                </p>
+                    <div class="col-12 col-md-4">
+                        <div class="retro-panel p-3 h-100">
+                            <div class="panel-header mb-2">03. DISPLAY ADAPTER</div>
+                            <div class="meta-value mb-1">CRT Monitor 1400x900 Mode</div>
+                            <div class="meta-mono text-muted">32-BIT COLOR / SCANLINE FILTER</div>
+                        </div>
+                    </div>
+                </section>
 
-                                <div class="meta-label mb-2">MINIMUM SYSTEM REQUIREMENTS</div>
-                                <div class="table-responsive retro-inset">
-                                    <table class="table table-borderless mb-0 playlist-table">
-                                        <tbody>
-                                            <tr class="playlist-row">
-                                                <td class="fw-bold">Operating System</td>
-                                                <td>Windows 98 SE / Windows 2000 / Windows XP</td>
-                                            </tr>
-                                            <tr class="playlist-row">
-                                                <td class="fw-bold">Processor</td>
-                                                <td>Intel Pentium II 300 MHz</td>
-                                            </tr>
-                                            <tr class="playlist-row">
-                                                <td class="fw-bold">Memory</td>
-                                                <td>64 MB SDRAM</td>
-                                            </tr>
-                                            <tr class="playlist-row">
-                                                <td class="fw-bold">Sound Card</td>
-                                                <td>16-bit SoundBlaster Compatible (44.1 kHz)</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                <!-- Tầng 3: Chia đôi 2 cột đối xứng (Form gửi yêu cầu & Khung đọc tài liệu Iframe) -->
+                <div class="row g-4">
+                    <!-- Cột trái: Biểu mẫu gửi yêu cầu bài hát -->
+                    <div class="col-12 col-lg-7">
+                        <section id="contact-section" class="retro-panel p-3 h-100">
+                            <div class="panel-header mb-3">GỬI YÊU CẦU BÀI HÁT / LỜI NHẮN GUESTBOOK</div>
+                            <form id="feedback-form" class="row g-3">
+                                <div class="col-12 col-md-6">
+                                    <label for="user-name" class="meta-label d-block mb-1">TÊN HOẶC BIỆT DANH</label>
+                                    <input type="text" id="user-name" class="retro-input" placeholder="Ví dụ: haku_2001" required>
                                 </div>
-                            </section>
-                        </div>
 
-                        <!-- Khung iframe đọc tài liệu hướng dẫn -->
-                        <div class="col-12 col-lg-5">
-                            <section class="retro-panel p-3 h-100">
-                                <div class="panel-header mb-3">DOCUMENT VIEWER (IFRAME)</div>
-                                <iframe
-                                    name="about-frame"
-                                    src="manual-frame.html"
-                                    class="retro-iframe retro-inset"
-                                    title="Tài liệu hướng dẫn sử dụng"
-                                ></iframe>
-                            </section>
-                        </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="fav-space" class="meta-label d-block mb-1">ALBUM / KHÔNG GIAN YÊU THÍCH</label>
+                                    <select id="fav-space" class="retro-input">
+                                        <option value="Memories That Never Happened">01. Empty Hallway — Memories That Never Happened</option>
+                                        <option value="After Midnight">02. Midnight Station — After Midnight</option>
+                                        <option value="Poolside Static">03. Indoor Pool — Poolside Static</option>
+                                        <option value="Sunday Closing Time">04. Closed Mall — Sunday Closing Time</option>
+                                        <option value="Cubicle 1998">05. Fluorescent Office — Cubicle 1998</option>
+                                        <option value="Wet Asphalt & Streetlights">06. Rainy Parking Lot — Wet Asphalt &amp; Streetlights</option>
+                                        <option value="Lobby Television">07. Empty Waiting Room — Lobby Television</option>
+                                        <option value="Exit Level B2">08. Quiet Stairwell — Exit Level B2</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="user-message" class="meta-label d-block mb-1">NỘI DUNG YÊU CẦU / GÓP Ý</label>
+                                    <textarea id="user-message" class="retro-input" rows="4" placeholder="Nhập tên bài hát muốn thêm hoặc lời nhắn của bạn..." required></textarea>
+                                </div>
+
+                                <div class="col-12 d-flex flex-wrap align-items-center gap-3">
+                                    <button type="submit" class="retro-button">GỬI LỜI NHẮN</button>
+                                    <button type="reset" class="retro-button">XÓA TRẮNG</button>
+                                    <span id="form-status" class="status-text"></span>
+                                </div>
+                            </form>
+                        </section>
                     </div>
 
-                    <!-- Biểu mẫu gửi yêu cầu bài hát hoặc góp ý -->
-                    <section id="contact-section" class="retro-panel p-3">
-                        <div class="panel-header mb-3">REQUEST A TRACK / SEND FEEDBACK</div>
-                        <form id="feedback-form" class="row g-3">
-                            <div class="col-12 col-md-6">
-                                <label for="user-name" class="meta-label d-block mb-1">YOUR NAME / NICKNAME</label>
-                                <input type="text" id="user-name" class="retro-input" placeholder="Ví dụ: haku_2001" required>
+                    <!-- Cột phải: Khung iframe đọc tài liệu hệ thống -->
+                    <div class="col-12 col-lg-5">
+                        <section class="retro-panel p-3 h-100">
+                            <div class="panel-header d-flex justify-content-between align-items-center mb-3">
+                                <span>TRÌNH ĐỌC TÀI LIỆU (IFRAME)</span>
+                                <div class="d-flex gap-1">
+                                    <a href="manual-frame.html" target="about-frame" class="retro-button py-1 px-2">MANUAL.TXT</a>
+                                    <a href="info-frame.html" target="about-frame" class="retro-button py-1 px-2">LOG.TXT</a>
+                                </div>
                             </div>
-
-                            <div class="col-12 col-md-6">
-                                <label for="fav-space" class="meta-label d-block mb-1">FAVORITE LIMINAL THEME</label>
-                                <select id="fav-space" class="retro-input">
-                                    <option value="Empty Hallway">Empty Hallway (Hành lang vắng)</option>
-                                    <option value="Midnight Station">Midnight Station (Sân ga đêm)</option>
-                                    <option value="Indoor Pool">Indoor Pool (Hồ bơi trong nhà)</option>
-                                    <option value="Closed Mall">Closed Mall (Trung tâm thương mại)</option>
-                                </select>
-                            </div>
-
-                            <div class="col-12">
-                                <label for="user-message" class="meta-label d-block mb-1">TRACK REQUEST OR MESSAGE</label>
-                                <textarea id="user-message" class="retro-input" rows="3" placeholder="Nhập tên bài hát hoặc lời nhắn của bạn..." required></textarea>
-                            </div>
-
-                            <div class="col-12 d-flex align-items-center gap-3">
-                                <button type="submit" class="retro-button">SEND MESSAGE</button>
-                                <button type="reset" class="retro-button">CLEAR</button>
-                                <span id="form-status" class="status-text"></span>
-                            </div>
-                        </form>
-                    </section>
+                            <iframe
+                                name="about-frame"
+                                src="manual-frame.html"
+                                class="retro-iframe retro-inset"
+                                title="Tài liệu hướng dẫn sử dụng"
+                            ></iframe>
+                        </section>
+                    </div>
                 </div>
+
             </main>
 
-            <!-- Thanh trạng thái dưới cùng -->
-            <footer class="status-bar d-flex justify-content-between align-items-center p-3">
+            <!-- Thanh trạng thái dưới cùng cửa sổ -->
+            <div class="status-bar d-flex justify-content-between align-items-center p-3">
                 <span>VERSION: HAKU PLAYER 2001 BUILD 1016</span>
-                <span>STATUS: ONLINE</span>
-            </footer>
+                <span>CONTROL PANEL STATUS: ONLINE</span>
+            </div>
 
         </div>
+
+        <!-- Chân trang hiển thị thông tin chi tiết ở dưới cùng trang web -->
+        <footer class="site-footer retro-panel mt-3 p-3">
+            <div class="row g-4">
+                <div class="col-12 col-md-5">
+                    <div class="footer-heading">HAKU PLAYER 2001 — AUDIO ARCHIVE</div>
+                    <p class="mb-2">
+                        Trình phát nhạc trực tuyến lấy cảm hứng từ phần mềm máy tính giai đoạn 1998 – 2008,
+                        lưu trữ các bản nhạc ambient và hình ảnh không gian hoài niệm (Liminal Space).
+                    </p>
+                    <div class="meta-mono">AUDIO: 128 KBPS MP3 / 44.1 KHZ STEREO</div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="footer-heading">DANH MỤC TRANG WEB</div>
+                    <ul class="list-unstyled footer-links mb-0">
+                        <li><a href="index.html">&raquo; Trang chủ (Music Player)</a></li>
+                        <li><a href="albums.html">&raquo; Bộ sưu tập CD-ROM Albums</a></li>
+                        <li><a href="gallery.html">&raquo; Thư viện ảnh Liminal</a></li>
+                        <li><a href="about.html">&raquo; Giới thiệu &amp; Gửi yêu cầu</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-4">
+                    <div class="footer-heading">THÔNG TIN ĐỒ ÁN &amp; LIÊN HỆ</div>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-1"><strong>Học phần:</strong> Thiết kế Web</li>
+                        <li class="mb-1"><strong>Công nghệ:</strong> HTML5, CSS3, Bootstrap 5, JS</li>
+                        <li class="mb-1"><strong>Email:</strong> archive@hakuplayer2001.local</li>
+                        <li><strong>Phiên bản:</strong> Build 2001.10 (Desktop Edition)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-2">
+                <span>&copy; 2001 - 2026 HAKU PLAYER PROJECT. ALL RIGHTS RESERVED.</span>
+                <span>BEST VIEWED AT 1400x900 RESOLUTION — CRT DISPLAY MODE</span>
+            </div>
+        </footer>
     </div>
 
     <script>
@@ -214,10 +264,9 @@
         feedbackForm.addEventListener("submit", function (event) {
             event.preventDefault();
             const nameValue = document.querySelector("#user-name").value;
-            formStatus.textContent = "SAVED MESSAGE FROM: " + nameValue.toUpperCase();
+            formStatus.textContent = "ĐÃ LƯU LỜI NHẮN TỪ: " + nameValue.toUpperCase();
             feedbackForm.reset();
         });
     </script>
 </body>
 </html>
-
